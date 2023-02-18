@@ -4,7 +4,7 @@ if(!isset($_SESSION['admin_id'])){
     header('Location:../login.php');
 }
 
-if(!isset($_SESSION['product_id'])){
+if(!isset($_GET['product_id'])){
     header('Location:products.php');
 }
 
@@ -119,7 +119,10 @@ $product=getProductById($id);
                             <div class="bg-danger col-8 offset-2 mt-5 p-3"><?php  echo  $_SESSION['error']?></div>
                         <?php
                     endif;?>
-                    <?php session_unset(); ?>
+                    <?php 
+                    unset($_SESSION['success']);
+                       unset($_SESSION['error']);
+                    ?>
                 <form  action="../handler/updateProducts.php" method="post" enctype="multipart/form-data">
 
 

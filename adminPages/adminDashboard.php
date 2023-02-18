@@ -58,7 +58,7 @@ span {
                             </a>
                             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0"><i class="fa-solid fa-eye"></i><span
+                                    <a href="products.php" class="nav-link px-0"><i class="fa-solid fa-eye"></i><span
                                             class="d-none d-sm-inline"> View All Products</span>
                                     </a>
                                 </li>
@@ -68,7 +68,7 @@ span {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="editProducts" class="nav-link px-0"><i class="fa-solid fa-pen-to-square"></i><span
+                                    <a href="editProducts.php" class="nav-link px-0"><i class="fa-solid fa-pen-to-square"></i><span
                                             class="d-none d-sm-inline"> Update Product</span>
                                     </a>
                                 </li>
