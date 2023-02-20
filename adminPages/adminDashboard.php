@@ -112,13 +112,18 @@ span {
                             </ul>
                         </li>
                         <li>
-                            <a href="manualOrder.php" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fa-solid fa-border-all"></i> <span class="ms-1 d-none d-sm-inline">Manual
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-border-all"></i> <span class="ms-1 d-none d-sm-inline">
                                     Orders</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0"><i class="fa-solid fa-eye"></i><span
-                                            class="d-none d-sm-inline"> View All Orders</span>
+                                    <a href="checks.php" class="nav-link px-0"><i class="fa-solid fa-eye"></i><span
+                                            class="d-none d-sm-inline"> checks</span>
+                                    </a>
+                                </li>
+                                <li class="w-100">
+                                    <a href="manualOrder.php" class="nav-link px-0"><i class="fa-solid fa-eye"></i><span
+                                            class="d-none d-sm-inline"> manual Order</span>
                                     </a>
                                 </li>
                             </ul>

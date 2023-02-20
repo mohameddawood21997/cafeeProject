@@ -67,7 +67,7 @@ if(!isset($_SESSION['user_id'])){
 
 <body onload="">
     <!-- Navbar -->
-
+    <?php include 'userNav.php'; ?>
   <!-- Navbar -->
     <section class="h-100 gradient-custom">
         <div class="container py-5">
