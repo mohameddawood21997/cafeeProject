@@ -17,16 +17,16 @@
           <a class="nav-link" href="cart.php">My Cart</a>
         </li>
       </ul>
-      <div class="d-flex profile" >
+      <div class="d-flex profile">
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img width="60" src="../images/profile.jfif" alt="">
+            <img width="60" src="../images/profile.jfif" class="rounded-circle" alt="">
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="handler/logout.php">logout</a></li>
             <li><a class="dropdown-item" href="Order-user.php">order</a></li>
-        </li>
-       </ul>
-    </div>
-  </div>
+            </li>
+          </ul>
+        </div>
+      </div>
 </nav>

@@ -1,5 +1,4 @@
 <!-- Navbar -->
-<body style="padding: 0;">
 <nav class="navbar navbar-expand-lg bg-light mb-5 p-3">
   <div class="container">
     <a class="navbar-brand" href="#"><img width="140" src="../assets2/images/logo (1).png" alt=""></a>
@@ -11,30 +10,29 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="adminDashboard.php">Home</a>
         </li>
-       
         <li class="nav-item">
-          <a class="nav-link" href="users.php">users</a>
+          <a style="color: black;" class="nav-link" href="users.php">users</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products.php">products</a>
+          <a style="color: black;" class="nav-link" href="products.php">products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="manualOrder.php"> orders</a>
+          <a style="color: black;" class="nav-link" href="manualOrder.php"> orders</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="checks.php">checks</a>
+          <a style="color: black;" class="nav-link" href="checks.php">checks</a>
         </li>
       </ul>
-      <div class="d-flex profile" >
+      <div class="d-flex profile">
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img width="60" src="../assets2/images/profile.jfif" alt="">
+            <img width="60" src="../images/profile.jfif" class="rounded-circle" alt="">
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../handler/logout.php">logout</a></li>
             <li><a class="dropdown-item" href="checks.php">order</a></li>
-        </li>
-       </ul>
-    </div>
-  </div>
+            </li>
+          </ul>
+        </div>
+      </div>
 </nav>

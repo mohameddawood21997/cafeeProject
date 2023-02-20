@@ -1,12 +1,13 @@
-<?php 
+<?php
 session_start();
-if(!isset($_SESSION['admin_id'])){
+if (!isset($_SESSION['admin_id'])) {
     header('Location:../login.php');
 }
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,27 +19,26 @@ if(!isset($_SESSION['admin_id'])){
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  
+
 
 
 
 
     <!-- Icone only -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../assets2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets2/css/datatables.min.css">
     <link rel="stylesheet" href="../assets2/css/style.css">
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-    i{
-        color: #7b3826;
-    }
-    span{
-        color: black;
-    }
+        i {
+            color: #7b3826;
+        }
+
+        span {
+            color: black;
+        }
     </style>
 </head>
