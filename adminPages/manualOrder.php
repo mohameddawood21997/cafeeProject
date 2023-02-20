@@ -66,7 +66,7 @@ $data = $sql->fetchAll(PDO::FETCH_ASSOC);
             <table>
                 <table class="table table-borderless  table-sm mt-3 " style="color: white;height: 10vw;width: 70vw;">
                     <thead>
-                        <tr >
+                        <tr style="background: #552e07ce;top: 0; position: sticky;" >
                             <th scope="col">Order Date</th>
                             <th scope="col">Name</th>
                             <th scope="col">Room</th>
