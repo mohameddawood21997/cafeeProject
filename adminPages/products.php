@@ -1,10 +1,6 @@
-<?php 
-session_start();
-if(!isset($_SESSION['admin_id'])){
-    header('Location:../login.php');
-}
 
-?>
+<?php include_once 'includes/header.php' ;?>
+
 <?php  require '../include/function.php' ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +24,7 @@ if(!isset($_SESSION['admin_id'])){
 <!-- =============== Design & Develop By = MJ MARAZ   ====================== -->
 
 <body>
-    <?php // include 'includes/adminNav.php'?>
+<?php include_once 'includes/adminNav.php' ?>
     <!-- =======  Data-Table  = Start  ========================== -->
     <div class="container">
         <div class="row">

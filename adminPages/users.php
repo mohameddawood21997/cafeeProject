@@ -1,13 +1,10 @@
-<?php include_once 'includes/header.php' ?> 
+<?php include_once 'includes/header.php' ;?>
 
 <?php  require '../include/function.php' ?>
 
+
+
 <?php include_once 'includes/adminNav.php' ?>
-<style>
-    body{padding: 0;
-      
-    }
-</style>
     <div class="container m-3 mx-auto">
         <div class="row">
             <div class="col-12">

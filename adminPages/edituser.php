@@ -1,9 +1,4 @@
-<?php 
-session_start();
-if(!isset($_SESSION['admin_id'])){
-    header('Location:../login.php');
-}
-?>
+
 <?php
 
 require '../include/function.php';
@@ -57,7 +52,8 @@ $user = getUserData('users',$id);
     </style>
 </head>
 
-<body>
+<body style="pa">
+  <?php require 'includes/adminNav.php';?>
 
                 <?php if(isset($_SESSION['success'])):?>
                         <div class="bg-success col-8 offset-2 mt-5 p-3 "><?php echo  $_SESSION['success']?></div> 
@@ -65,7 +61,9 @@ $user = getUserData('users',$id);
                             <div class="bg-danger col-8 offset-2 mt-5 p-3"><?php  echo  $_SESSION['error']?></div>
                         <?php
                     endif;?>
-                    <?php session_unset(); ?>
+                    <?php unset($_SESSION['error']); 
+                         unset($_SESSION['success']); 
+                    ?>
 
     <form action="../handler/updateuser.php" class="mt-5  mx-auto row" method="post" enctype="multipart/form-data">
         <h2 class="text-center">Update User</h2>

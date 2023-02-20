@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <?php 
+  session_start();
+    if(isset($_SESSION['admin_id'])){
+      header("location:adminPages/adminDashboard.php");
+    }elseif(isset($_SESSION['user_id'])){
+      header("location:index.php");
+    }
+
+  ?>
   <title>Login</title> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
   <style>

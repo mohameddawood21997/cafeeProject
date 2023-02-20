@@ -1,10 +1,4 @@
-<?php 
-session_start();
-if(!isset($_SESSION['admin_id'])){
-    header('Location:../login.php');
-}
-
-?>
+<?include_once 'includes/header.php' ;?>
 <?php require '../include/function.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,44 +38,7 @@ if(!isset($_SESSION['admin_id'])){
 </style>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img width="140" src="./logo (1).png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">My order</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">My cart</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">My Orders</a>
-                    </li>
-                </ul>
-                <div class="d-flex profile">
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img width="60" class="rounded-circle" src="./profile.jfif" alt="">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">logout</a></li>
-                            <li><a class="dropdown-item" href="#">order</a></li>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-    </nav>
+<?php require 'includes/adminNav.php';?>
     <!-- Navbar -->
 
 
@@ -158,24 +115,7 @@ if(!isset($_SESSION['admin_id'])){
                   
                     </tbody>
                  
-                    <tbody>
-                        <!-- id="r111"-->
-                        <!-- <tr class="collapse accordion-collapse" id="r111" data-bs-parent=".table"
-                            style="background-color: #7b3826ce; color: #fff;">
-                            <td id="f" colspan="5">
-                                <div>
-                                    <div style="color:black" class="pt-5  d-flex justify-content-evenly ">
-                                        <span><img src="./logo (1).png" height="150px" width="120px" alt="">
-                                            <p>Cofee</p>
-                                            <p>Price:30LE</p>
-                                            <p>QTY:1</p>
-                                        </span>
-                                      
-                                    </div>
-                                </div>
-                            </td>
-                        </tr> -->
-                    </tbody>
+                 
                     <?php endforeach; ?>
                     <?php endforeach; ?>
                     

@@ -1,10 +1,4 @@
-<?php session_start();
- if(!isset($_SESSION['user_id'])){
-     header("location:../login.php");
- }
-
- 
-?>
+<?include_once 'includes/header.php' ;?>
 
 <?php require '../include/function.php';
    $user_id= $_SESSION['user_id'];

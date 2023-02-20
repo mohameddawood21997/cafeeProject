@@ -1,3 +1,13 @@
+<?php 
+// session_start();
+// var_dump($_SESSION)
+// // if(!isset($_SESSION['admin_id'])){
+// //     header('Location:../login.php');
+// // }
+
+  include_once 'includes/header.php' ;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +38,7 @@ i,
 span {
     color: black;
 }
+
 </style>
 <?php // include_once 'includes/adminNav.php' ?>
 
@@ -53,7 +64,7 @@ span {
                             </a>
                         </li>
                         <li>
-                            <a href="products.php" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                                 <i class="fa-solid fa-mug-hot"></i><span class="ms-1 d-none d-sm-inline">Products</span>
                             </a>
                             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
@@ -131,7 +142,7 @@ span {
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                             <!-- <hr class="dropdown-divider"> -->
                             </li>
-                            <li><a class="dropdown-item" href="../handler.php">Log out</a></li>
+                            <li><a class="dropdown-item" href="../handler/logout.php">Logout</a></li>
                         </ul>
                     </div>
                 </div>

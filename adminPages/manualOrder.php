@@ -1,9 +1,4 @@
-<?php 
-session_start();
-if(!isset($_SESSION['admin_id'])){
-    header('Location:../login.php');
-}
-?>
+<?include_once 'includes/header.php' ;?>
 <?php
 require '../include/db.php';
 
@@ -59,39 +54,7 @@ $data = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img width="140" src="./logo (1).png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Users</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Manual Orders</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Checks</a>
-                    </li>
-                </ul>
-
-                <div class="d-flex profile">
-                    <div class="nav-item dropdown">
-                        <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
-                        <img width="60" class="rounded-circle " src="./profile.jfif" alt="">
-                        </a>
-                    </div>
-                </div>
-    </nav>
+<?php require 'includes/adminNav.php';?>
     <!-- Update Product -->
     <div id="main-container">
         <div id="table-container row d-flex justify-content-center " style="width: 100%;height: 100%;">

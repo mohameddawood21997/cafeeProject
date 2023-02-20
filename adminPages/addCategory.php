@@ -1,5 +1,5 @@
 <?php include_once 'includes/header.php' ?> 
-  <?php include_once 'includes/adminNav.php' ?>
+
 <style>
     body {
         background-image: url("./slider3.jpg");
@@ -40,7 +40,7 @@
 </style>
 
 <body style="padding:0;">
- 
+<?php include_once 'includes/adminNav.php' ?>
     <!-- Addproduct -->
     <main class="container p-4">
         <div class="row d-flex justify-content-center pt-5">
